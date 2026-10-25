@@ -4,7 +4,7 @@ Included twice on the Events page (homepage), once per section.
 Parameters:
   events - required, the combined site.data.meetings and site.data.talks
            lists. Both require title, category, institution, and start;
-           location and url are optional. Meetings optionally have end
+           url is optional. Meetings optionally have end
            and organized_by. Talks require speaker and optionally have
            institution_abbreviated, seminar, and seminar_url.
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
@@ -38,7 +38,6 @@ organized_by: true switches the institution line from "At
 {%- endif -%}
 <ul class="event-cards" role="list">
 {% for event in bucket %}
-  {% assign location = event.location | default: "" | strip %}
   <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}" data-institution="{{ event.institution | escape }}">
     <p class="event-line1">
       {% include date-range.html start=event.start end=event.end %}:
@@ -50,7 +49,7 @@ organized_by: true switches the institution line from "At
         {% else %}
           <span class="event-title">{{ seminar | escape }}</span>
         {% endif %}
-        ({{ institution | escape }}{% if location != "" %}, {{ location | escape }}{% endif %})
+        ({{ institution | escape }})
       {% else %}
         {% if event.url != blank %}
           <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
@@ -70,7 +69,7 @@ organized_by: true switches the institution line from "At
       </p>
     {% else %}
       <p class="event-institution">
-        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}{% if location != "" %} in {{ location | escape }}{% endif %}
+        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}
       </p>
     {% endif %}
   </li>

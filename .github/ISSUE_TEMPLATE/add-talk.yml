@@ -63,14 +63,6 @@ body:
     validations:
       required: false
   - type: input
-    id: location
-    attributes:
-      label: Location
-      description: Optional city or geographical region where the talk takes place. Displayed beside the institution abbreviation or full name. Put the institution in the fields above.
-      placeholder: "Madrid"
-    validations:
-      required: false
-  - type: input
     id: url
     attributes:
       label: Talk homepage

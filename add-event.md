@@ -26,3 +26,5 @@ Talks can belong to a recurring seminar or be standalone events.
 
 Each button opens a suggestion form on GitHub. A maintainer will review
 your suggestion before adding it to the website.
+All events are assumed to take place in Madrid; the forms only ask for
+the hosting or organizing institution.

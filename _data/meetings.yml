@@ -1,15 +1,14 @@
 # Algebraic geometry meetings in Madrid: conferences, workshops,
 # minicourses, schools, and similar programs. Use category: meeting.
 # Required fields: title, category, institution, start (YYYY-MM-DD).
-# Optional fields: end, location, url, organized_by.
+# Optional fields: end, url, organized_by.
+# All events take place in Madrid; no location field is needed.
 # Individual seminar and colloquium talks belong in talks.yml.
 # Meetings and talks are combined on the Events page, then grouped by
 # _includes/events-list.html using end (or start, if no end) vs.
 # the current date in Madrid at build time. Within each group, start
 # determines the order: Upcoming soonest-first, Past most-recent-first.
 # Entries can appear in any order here. Omit end for a single-day meeting.
-# location is the city or geographical region, displayed as
-# "in [location]" after the institution.
 # Omit url if the meeting has no homepage.
 # organized_by: true renders "Organized by [institution]" instead of
 # "At [institution]" for meetings held away from the institution's campus.

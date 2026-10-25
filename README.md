@@ -11,11 +11,14 @@ page, also reached from the homepage's **Add Event** button. Choose
 **Meeting** or **Talk** to open the corresponding GitHub issue form:
 
 - `.github/ISSUE_TEMPLATE/add-meeting.yml` asks for a title, institution,
-  and start date, with optional end date, location, homepage, and a
+  and start date, with optional end date, homepage, and a
   checkbox for meetings organized away from the institution's campus.
 - `.github/ISSUE_TEMPLATE/add-talk.yml` asks for a talk title, speaker,
   hosting institution, and date, with optional institution abbreviation,
-  seminar name, seminar website, location, and talk homepage.
+  seminar name, seminar website, and talk homepage.
+
+All events are assumed to take place in Madrid, so neither form asks
+for a city or geographical region.
 
 Both forms create issues labeled `add-event`; their titles identify
 them as `[Meeting]` or `[Talk]`. A maintainer reviews each suggestion,
@@ -32,6 +35,8 @@ Use `category: meeting` in `_data/meetings.yml` or `category: talk` in
 Listings live in `_data/meetings.yml` and `_data/talks.yml`. The homepage
 combines both lists and renders them through `_includes/events-list.html`.
 Every entry must explicitly include the appropriate `category`.
+Do not add a `location` field; Madrid is implicit for every listing.
+Keep the hosting or organizing institution in `institution`.
 
 ### Meetings
 
@@ -45,15 +50,13 @@ belong in `_data/meetings.yml`. Required fields are `title`,
   institution: "Instituto de Ciencias Matemáticas (ICMAT)"
   start: 2026-11-05
   end: 2026-11-06      # optional; omit for a single-day meeting
-  location: "Madrid" # optional city or geographical region
   url: "https://example.org/workshop" # optional meeting homepage
   organized_by: true # optional; only for meetings away from its campus
 ```
 
 Meeting cards have a blue background that adapts to the site's theme.
-The first line shows the
-date and linked title. The second reads **At [institution]**, followed
-by **in [location]** when supplied. Use `organized_by: true` only when
+The first line shows the date and linked title. The second reads
+**At [institution]**. Use `organized_by: true` only when
 the institution organizes a meeting at a different physical venue;
 this changes **At** to **Organized by**. Otherwise omit it.
 
@@ -71,13 +74,12 @@ presentations belong in `_data/talks.yml`. Required fields are `title`
   institution: "Universidad Complutense de Madrid"
   institution_abbreviated: "UCM" # optional short name for the card
   start: 2026-11-05
-  location: "Madrid" # optional city or geographical region
   seminar: "Algebraic Geometry Seminar" # optional recurring series
   seminar_url: "https://example.org/seminar" # optional series website
   url: "https://example.org/talk" # optional individual talk page
 ```
 
-Talk cards show **date: seminar (institution_abbreviated, location)**
+Talk cards show **date: seminar (institution_abbreviated)**
 on the first line, followed by **speaker — talk title** on the second.
 If `institution_abbreviated` is omitted, empty, or only whitespace, the
 card uses the full `institution` instead. Always keep the full name in
@@ -95,9 +97,8 @@ duration: a one-day workshop is a meeting; an individual presentation
 listed separately within a workshop is a talk.
 
 The examples above illustrate the format and are not actual listings.
-Omit unknown optional fields. For both categories, `location` is a city
-or geographical region, separate from the institution; omitting it
-also omits the surrounding location punctuation.
+Omit unknown optional fields. Cards show the institution without
+repeating the city.
 
 ### Dates and ordering
 
@@ -116,7 +117,7 @@ of the order of entries in the data files.
 The homepage's **Search** button opens filters for:
 
 - Text displayed in each card, including titles, speakers, seminars,
-  institutions, and locations. Institution searches also match the
+  and institutions. Institution searches also match the
   full name when an abbreviation is displayed.
 - Event type: meeting or talk. Selecting neither or both shows both.
 - A range for the event's starting date, inclusive of both endpoints;
@@ -125,6 +126,20 @@ The homepage's **Search** button opens filters for:
 The filters work together and preserve the existing event order.
 **Clear filters** restores the full list. An invalid date range shows
 an explanation, and a valid search with no matches shows an empty message.
+
+## Appearance
+
+The light theme uses background `#f1f1f1`, secondary surfaces `#e5e5e6`,
+blue accents `#0969da`, and meeting cards `#e6eef8`. The site uses
+Source Sans 3, a 52rem content column, outline buttons, and event cards.
+Colors and layout are defined in `assets/css/main.css`.
+
+The existing dark theme uses lighter blue accents (`#58a6ff`) and
+dark blue meeting cards (`#1c3045`). Links, active controls, and date
+validation messages use the theme's blue accent. The corner theme
+button switches between light and dark; without a saved choice, the
+site follows the system preference. The saved `theme` choice is shared
+with the main `pedro-nunez.github.io` site through localStorage.
 
 ## Local development
 

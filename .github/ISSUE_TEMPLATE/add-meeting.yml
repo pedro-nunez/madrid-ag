@@ -29,14 +29,6 @@ body:
       options:
         - label: This institution organizes the event at a different physical venue.
   - type: input
-    id: location
-    attributes:
-      label: Location
-      description: Optional city or geographical region where the meeting takes place. Displayed as "in [location]" after the institution.
-      placeholder: "Madrid"
-    validations:
-      required: false
-  - type: input
     id: start
     attributes:
       label: Start date
