@@ -12,4 +12,175 @@
 # Upcoming soonest-first, Past most-recent-first, sorted by start.
 # Replace [] with the first entry; keep [] when there are no talks.
 
-[]
+- title: "4-cyclic Higgs bundles, ∂-alternating surfaces, and QIE representations"
+  speaker: "Junming Zhang"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-09-17
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3005"
+
+- title: "Geometric structures and Higgs bundles"
+  speaker: "Steven Bradlow"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-09-17
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3004"
+
+- title: "Stability conditions for coherent systems on integral curves"
+  speaker: "Marcos Jardim"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-09-18
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3006"
+  
+- title: "Algebro-geometric aspects of Lie algebroid connections over a curve"
+  speaker: "Anoop Singh"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-01
+  seminar: "Geometry Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=geometria"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3020"
+
+- title: "On the Chow ring of very general abelian varieties and a question of Pirola"
+  speaker: "Claire Voisin"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-10-02
+  seminar: "Seminario de Álgebra, Geometría y Topología"
+  seminar_url: "https://eventos.ucm.es/117927/detail/seminario-de-algebra-geometria-y-topologia.html"
+
+- title: "Representaciones de álgebras de Lie y variedades de banderas"
+  speaker: "Manuel Timiraos López"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-10-08
+  seminar: "Seminario de Doctorandos"
+  url: "https://www.ucm.es/imi/file/manu-cartel?ver"
+
+- title: "Delzant`s correspondence"
+  speaker: "Alejandro Plaza Gallán"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-15
+  seminar: "Joint Mathematics Junior Colloquium"
+  seminar_url: "https://www.icmat.es/events/colloquium-junior-icmat-uam-uc3m-ucm/"
+  url: "https://www.icmat.es/events/colloquiums/colloquium-landing/?ID=3036"
+  
+- title: "A complex hyperKähler extension of the Weil-Petersson metric"
+  speaker: "Andrea Seppi"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-19
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3038"
+
+- title: "Pseudo-Kähler geometry of Hitchin representations in PSL(3,R)"
+  speaker: "Andrea Tamburelli"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-19
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3037"
+
+- title: "Branched real projective structures and cyclic Higgs bundles"
+  speaker: "Nicholas Rungi"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-20
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3039"
+
+- title: "Geometric structures from cyclic Higgs bundles via parallel distributions of planes"
+  speaker: "Colin Davalo"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-20
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3040"
+
+- title: "Polynomials, configurations and braids"
+  speaker: "Rodrigo de Pool"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-10-20
+  seminar: "Seminario de Álgebra, Geometría y Topología"
+  seminar_url: "https://eventos.ucm.es/117927/detail/seminario-de-algebra-geometria-y-topologia.html"
+
+- title: "Classification of very stable Higgs bundles"
+  speaker: "Miguel González González"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-10-22
+  url: "https://www.ucm.es/doctorado/doctorado_inv_mat/noticias/82767"
+  
+- title: "Regulator constants and cohomology"
+  speaker: "Luca Caputo"
+  category: talk
+  institution: "Universidad Autónoma de Madrid"
+  institution_abbreviated: "UAM"
+  start: 2026-10-22
+  seminar: "Number Theory Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3044"
+  
+- title: "Proper good moduli spaces of vector bundles over curves"
+  speaker: "Dario Weissmann"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  institution_abbreviated: "ICMAT"
+  start: 2026-10-28
+  seminar: "Geometry Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=geometria"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3052"
+  
+- title: "Geometría algebraica y birracional: interacciones"
+  speaker: "Antonio Campillo López"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-11-11
+  seminar: "Seminario de Historia de la Matemática Mariano Martínez"
+  seminar_url: "https://blogs.mat.ucm.es/shm/xlvii-shm-curso-202627/"
+
+- title: "Counting closed geodesics and elliptic curves"
+  speaker: "Alberto Acosta Reche"
+  category: talk
+  institution: "Universidad Autónoma de Madrid"
+  institution_abbreviated: "UAM"
+  start: 2026-11-12
+  seminar: "Number Theory Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3054"
+  
+- title: "To be announced"
+  speaker: "Carolina Araujo"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-11-20
+  seminar: "Seminario de Álgebra, Geometría y Topología"
+  seminar_url: "https://eventos.ucm.es/117927/detail/seminario-de-algebra-geometria-y-topologia.html"

@@ -13,16 +13,51 @@
 # organized_by: true renders "Organized by [institution]" instead of
 # "At [institution]" for meetings held away from the institution's campus.
 
-- title: "Geometry conference in honour of Nigel Hitchin for his 80th birthday"
-  category: meeting
-  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
-  start: 2026-09-21
-  end: 2026-09-25
-  url: "https://www.icmat.es/RT/2026/HNLTT/hitchin80.php"
-
 - title: "2nd MaPhyAG Workshop: \"Algebraic Geometry and Mathematical Physics\""
   category: meeting
   institution: "Universidad Complutense de Madrid"
   start: 2026-06-29
   end: 2026-07-03
   url: "https://eventos.ucm.es/150772/detail/2nd-maphyag-workshop.html"
+
+- title: "Hitchin-Ngô Laboratory – Thematic Trimester"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2026-09-14
+  end: 2026-12-18
+  url: "https://www.icmat.es/RT/2026/HNLTT/"
+  
+- title: "XX Workshop de Jóvenes Investigadores"
+  category: meeting
+  institution: "Universidad Complutense de Madrid"
+  start: 2026-09-21
+  end: 2026-09-23
+  url: "https://www.ucm.es/imi/file/cartel-2026?ver"
+
+- title: "Geometry conference in honour of Nigel Hitchin for his 80th birthday"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2026-09-21
+  end: 2026-09-25
+  url: "https://www.icmat.es/RT/2026/HNLTT/hitchin80.php"
+  
+- title: "Workshop on Higgs bundles"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2026-11-10
+  end: 2026-11-13
+  url: "https://www.icmat.es/RT/2026/HNLTT/higgs.php"
+  
+- title: "Workshop on geometries with torsion: gauge theory and special holonomy"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2026-12-09
+  end: 2026-12-11
+  url: "https://www.icmat.es/RT/2026/HNLTT/torsion.php"
+
+- title: "Arithmetic of global fields"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2027-04-12
+  end: 2027-04-16
+  url: "https://www.icmat.es/congresos/2027/AGF/index.php"
