@@ -1,0 +1,80 @@
+name: Add a talk
+description: Suggest an individual algebraic geometry seminar or colloquium talk in Madrid.
+title: "[Talk]: "
+labels: ["add-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an individual talk for the Algebraic Geometry in Madrid website.
+        A maintainer will review your suggestion and add accepted talks to the website.
+  - type: input
+    id: title
+    attributes:
+      label: Talk title
+      description: The title of the individual talk, rather than the name of the seminar.
+    validations:
+      required: true
+  - type: input
+    id: speaker
+    attributes:
+      label: Speaker
+      placeholder: "Jane Doe"
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Hosting institution
+      description: Full name of the institution hosting the talk.
+      placeholder: "Universidad Complutense de Madrid"
+    validations:
+      required: true
+  - type: input
+    id: institution-abbreviated
+    attributes:
+      label: Institution abbreviation
+      description: Optional abbreviation displayed in the talk card, such as ICMAT, UCM, or UAM. Leave blank to display the full institution name.
+      placeholder: "UCM"
+    validations:
+      required: false
+  - type: input
+    id: start
+    attributes:
+      label: Date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-11-05"
+    validations:
+      required: true
+  - type: input
+    id: seminar
+    attributes:
+      label: Seminar name
+      description: Optional name of the recurring seminar. Leave blank for a standalone talk.
+      placeholder: "Algebraic Geometry Seminar"
+    validations:
+      required: false
+  - type: input
+    id: seminar-url
+    attributes:
+      label: Seminar website
+      description: Optional URL for the recurring seminar. Also provide its name above.
+      placeholder: "https://example.org/seminar"
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Optional city or geographical region where the talk takes place. Displayed beside the institution abbreviation or full name. Put the institution in the fields above.
+      placeholder: "Madrid"
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: Talk homepage
+      description: Optional URL for this individual talk. Use the seminar website field for the recurring series.
+      placeholder: "https://example.org/talk"
+    validations:
+      required: false

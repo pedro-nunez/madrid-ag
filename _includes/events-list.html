@@ -1,0 +1,81 @@
+{%- comment -%}
+Renders combined meeting and talk cards bucketed by date.
+Included twice on the Events page (homepage), once per section.
+Parameters:
+  events - required, the combined site.data.meetings and site.data.talks
+           lists. Both require title, category, institution, and start;
+           location and url are optional. Meetings optionally have end
+           and organized_by. Talks require speaker and optionally have
+           institution_abbreviated, seminar, and seminar_url.
+  mode   - required, "upcoming" or "past". "upcoming" shows events whose
+           end (or start, if no end) is >= today, sorted soonest-first.
+           "past" shows the rest, sorted most-recent-first.
+organized_by: true switches the institution line from "At
+  {{ institution }}" to "Organized by {{ institution }}" -- use it for
+  workshops run by a lab/institution at a different physical venue
+  (e.g. a workshop at a conference center), not for events simply hosted at a
+  university.
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign bucket = "" | split: "" -%}
+{%- for event in include.events -%}
+  {%- assign cutoff = event.end | default: event.start | date: "%Y-%m-%d" -%}
+  {%- assign one = include.events | slice: forloop.index0, 1 -%}
+  {%- if include.mode == "upcoming" -%}
+    {%- if cutoff >= today -%}
+      {%- assign bucket = bucket | concat: one -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- if cutoff < today -%}
+      {%- assign bucket = bucket | concat: one -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if include.mode == "upcoming" -%}
+  {%- assign bucket = bucket | sort: "start" -%}
+{%- else -%}
+  {%- assign bucket = bucket | sort: "start" | reverse -%}
+{%- endif -%}
+<ul class="event-cards" role="list">
+{% for event in bucket %}
+  {% assign location = event.location | default: "" | strip %}
+  <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}" data-institution="{{ event.institution | escape }}">
+    <p class="event-line1">
+      {% include date-range.html start=event.start end=event.end %}:
+      {% if event.category == "talk" %}
+        {% assign institution = event.institution_abbreviated | default: "" | strip | default: event.institution %}
+        {% assign seminar = event.seminar | default: "Seminar talk" %}
+        {% if event.seminar != blank and event.seminar_url != blank %}
+          <a href="{{ event.seminar_url | escape }}" class="event-link event-title">{{ seminar | escape }}</a>
+        {% else %}
+          <span class="event-title">{{ seminar | escape }}</span>
+        {% endif %}
+        ({{ institution | escape }}{% if location != "" %}, {{ location | escape }}{% endif %})
+      {% else %}
+        {% if event.url != blank %}
+          <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
+        {% else %}
+          <span class="event-title">{{ event.title | escape }}</span>
+        {% endif %}
+      {% endif %}
+    </p>
+    {% if event.category == "talk" %}
+      <p class="event-details">
+        {{ event.speaker | escape }} &mdash;
+        {% if event.url != blank %}
+          <a href="{{ event.url | escape }}" class="event-link">{{ event.title | escape }}</a>
+        {% else %}
+          {{ event.title | escape }}
+        {% endif %}
+      </p>
+    {% else %}
+      <p class="event-institution">
+        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}{% if location != "" %} in {{ location | escape }}{% endif %}
+      </p>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{%- if bucket.size == 0 -%}
+<p><em>{% if include.mode == "upcoming" %}No upcoming events.{% else %}No past events.{% endif %}</em></p>
+{%- endif -%}

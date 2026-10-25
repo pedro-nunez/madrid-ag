@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -23,16 +23,31 @@
   </script>
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/info-toggle.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/events-filter.js' | relative_url }}" defer></script>
 </head>
-<body>
+<body{% if page.url == '/' %} class="events-page"{% endif %}>
   <div class="topbar">
-    <span class="topbar-title">{{ site.title }}</span>
+    <a href="{{ '/' | relative_url }}" class="topbar-title">{{ site.title }}</a>
+  </div>
+  <div class="info-toggle-wrap">
+    <button type="button" id="info-toggle" class="info-toggle" aria-expanded="false" aria-controls="info-popup" title="About this website" aria-label="About this website">&#9432;</button>
+    <div id="info-popup" class="info-popup" hidden>
+      <p>A list of algebraic geometry conferences, workshops, and seminars
+      in Madrid.</p>
+      <p>You can suggest an event through the Add Event button. Any
+      help keeping this list up to date is appreciated!</p>
+      <p class="info-popup-credit">&mdash; Maintained by
+      <a href="https://pedro-nunez.github.io/">Pedro Núñez</a> &mdash;</p>
+    </div>
   </div>
   <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
   <div class="page-wrap">
     <main class="page-content">
       {{ content }}
     </main>
+  </div>
+  <div class="last-updated-bar">
+    <p class="last-updated">Last updated in {{ site.time | date: "%B %Y" }}</p>
   </div>
 </body>
 </html>

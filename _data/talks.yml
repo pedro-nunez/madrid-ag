@@ -1,0 +1,15 @@
+# Individual algebraic geometry seminar and colloquium talks in Madrid.
+# Required fields: title, speaker, category: talk, institution, start
+# (YYYY-MM-DD). Optional fields: institution_abbreviated, location,
+# seminar, seminar_url, url. Keep the full hosting name in institution;
+# institution_abbreviated is an optional display name (e.g. ICMAT or UCM).
+# location is the city or geographical region, not the institution.
+# seminar_url links to the recurring series; url links to this talk.
+# Supply a seminar name when providing seminar_url. Omit seminar for
+# a standalone talk. Do not use meeting-only end or organized_by fields.
+# Entries can appear in any order. The Events page combines these with
+# meetings.yml and groups them by date in Europe/Madrid at build time:
+# Upcoming soonest-first, Past most-recent-first, sorted by start.
+# Replace [] with the first entry; keep [] when there are no talks.
+
+[]

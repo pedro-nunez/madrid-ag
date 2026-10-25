@@ -1,10 +1,11 @@
 title: Algebraic Geometry in Madrid
 description: A list of algebraic geometry conferences, workshops, and seminars in Madrid.
-baseurl: "/ag-in-madrid"
+baseurl: "/madrid-ag"
 url: "https://pedro-nunez.github.io"
 
-# Used as site.time's timezone, so the upcoming/past split in index.md
-# lands on Madrid's calendar day regardless of the build server's TZ.
+# Used as site.time's timezone, so the upcoming/past split in
+# _includes/events-list.html lands on Madrid's calendar day regardless
+# of the build server's TZ.
 timezone: Europe/Madrid
 
 # Explicitly disable the github-pages gem's default theme

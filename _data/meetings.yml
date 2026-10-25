@@ -1,0 +1,29 @@
+# Algebraic geometry meetings in Madrid: conferences, workshops,
+# minicourses, schools, and similar programs. Use category: meeting.
+# Required fields: title, category, institution, start (YYYY-MM-DD).
+# Optional fields: end, location, url, organized_by.
+# Individual seminar and colloquium talks belong in talks.yml.
+# Meetings and talks are combined on the Events page, then grouped by
+# _includes/events-list.html using end (or start, if no end) vs.
+# the current date in Madrid at build time. Within each group, start
+# determines the order: Upcoming soonest-first, Past most-recent-first.
+# Entries can appear in any order here. Omit end for a single-day meeting.
+# location is the city or geographical region, displayed as
+# "in [location]" after the institution.
+# Omit url if the meeting has no homepage.
+# organized_by: true renders "Organized by [institution]" instead of
+# "At [institution]" for meetings held away from the institution's campus.
+
+- title: "Geometry conference in honour of Nigel Hitchin for his 80th birthday"
+  category: meeting
+  institution: "Instituto de Ciencias Matemáticas (ICMAT)"
+  start: 2026-09-21
+  end: 2026-09-25
+  url: "https://www.icmat.es/RT/2026/HNLTT/hitchin80.php"
+
+- title: "2nd MaPhyAG Workshop: \"Algebraic Geometry and Mathematical Physics\""
+  category: meeting
+  institution: "Universidad Complutense de Madrid"
+  start: 2026-06-29
+  end: 2026-07-03
+  url: "https://eventos.ucm.es/150772/detail/2nd-maphyag-workshop.html"

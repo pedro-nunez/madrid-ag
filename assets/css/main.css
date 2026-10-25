@@ -38,6 +38,9 @@ html {
   --sidebar-bg-color: #e4e4e6;
   --text-color: #000;
   --accent-color: #7b1e3a;
+  --meeting-bg-color: #e6eef8;
+  --card-border-color: rgba(0, 0, 0, 0.12);
+  --filter-error-color: #a12424;
 }
 
 /* Falls back to the system's light/dark preference when no manual
@@ -48,6 +51,9 @@ html {
     --sidebar-bg-color: #262626;
     --text-color: #e8e8e8;
     --accent-color: #daa520;
+    --meeting-bg-color: #1c3045;
+    --card-border-color: rgba(255, 255, 255, 0.18);
+    --filter-error-color: #ff9292;
   }
 }
 
@@ -59,6 +65,9 @@ html {
   --sidebar-bg-color: #262626;
   --text-color: #e8e8e8;
   --accent-color: #daa520;
+  --meeting-bg-color: #1c3045;
+  --card-border-color: rgba(255, 255, 255, 0.18);
+  --filter-error-color: #ff9292;
 }
 
 body {
@@ -173,10 +182,12 @@ h2 {
   display: block;
   width: fit-content;
   margin: 0 auto;
-  padding: 0.2rem 0.5rem;
+  padding: 0.15rem 0.6rem;
   border: 1px solid var(--text-color);
-  border-radius: 0.25rem;
-  font-size: 0.9em;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.8em;
+  cursor: pointer;
   background: none;
   color: var(--text-color);
   text-decoration: none;
@@ -193,6 +204,182 @@ h2 {
   opacity: 1;
 }
 
+/* Event actions, search filters, and meeting/talk cards. */
+.events-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.events-actions .button {
+  margin: 0;
+}
+
+.button.active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+/* The panel sets display explicitly, so preserve its hidden state. */
+.events-filters[hidden] {
+  display: none;
+}
+
+.events-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.filter-group-label {
+  font-size: 0.85em;
+  font-weight: bold;
+  opacity: 0.75;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 28rem;
+}
+
+.filter-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9em;
+}
+
+.filter-checkbox input {
+  margin: 0;
+}
+
+.events-search,
+.events-date-input {
+  font: inherit;
+  font-size: 0.9em;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 0.25rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  opacity: 0.85;
+  max-width: 100%;
+}
+
+.events-search:focus,
+.events-date-input:focus {
+  outline: none;
+  opacity: 1;
+  border-color: var(--accent-color);
+}
+
+#events-filters-clear {
+  display: inline-block;
+  margin: 0;
+}
+
+.events-empty-message {
+  opacity: 0.75;
+}
+
+.events-filters .filter-actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.events-date-range {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.events-date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.events-date-field label,
+.events-filter-hint,
+.events-date-error {
+  font-size: 0.85em;
+}
+
+.events-filter-hint,
+.events-date-error {
+  margin: 0;
+}
+
+.events-filter-hint {
+  opacity: 0.75;
+}
+
+.events-date-error {
+  color: var(--filter-error-color);
+}
+
+.events-group > h2 {
+  font-size: 1.15em;
+  margin-top: 2rem;
+}
+
+.events-group:first-of-type > h2 {
+  margin-top: 1rem;
+}
+
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-card {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.4rem;
+  overflow-wrap: anywhere;
+}
+
+.event-card[data-category="meeting"] {
+  background: var(--meeting-bg-color);
+}
+
+.event-line1 {
+  margin: 0;
+}
+
+.event-title {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.event-institution,
+.event-details {
+  margin: 0.2rem 0 0;
+}
+
 /* Mobile-only top bar (see the @media block below). Hidden on desktop,
    where the title is the in-page <h1> and the info/theme toggles just
    float in the corners above it instead. */
@@ -202,6 +389,8 @@ h2 {
 
 .topbar-title {
   font-weight: bold;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Info toggle, fixed top-left symmetrically to .theme-toggle
@@ -285,10 +474,22 @@ h2 {
     padding: 3rem 1.25rem 3.5rem;
   }
 
-  /* .topbar shows the title on mobile instead, so the in-page one
-     would just duplicate it. */
+  /* The top bar repeats the site's heading only on the Events page. */
   h1 {
+    font-size: 2rem;
+  }
+
+  .events-page .page-content > h1 {
     display: none;
+  }
+
+  .events-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-options {
+    max-width: none;
   }
 
   .topbar {
