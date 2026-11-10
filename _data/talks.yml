@@ -166,6 +166,16 @@
   seminar: "Seminario de Historia de la Matemática Mariano Martínez"
   seminar_url: "https://blogs.mat.ucm.es/shm/xlvii-shm-curso-202627/"
 
+- title: "¿Qué es una superficie de Riemann?"
+  speaker: "Adela Latorre"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-11-12
+  seminar: "Coloquios πZZ∀MAT"
+  seminar_url: "https://blogs.mat.ucm.es/alvpel01/pizzamatcoloquio/"
+  url: "https://eventos.ucm.es/158079/detail/coloquio-pzzfmat-que-es-una-superficie-de-riemann.html"
+
 - title: "Counting closed geodesics and elliptic curves"
   speaker: "Alberto Acosta Reche"
   category: talk
@@ -175,6 +185,16 @@
   seminar: "Number Theory Seminar"
   seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
   url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3054"
+
+- title: 'The density of elliptic curves over $\mathbb{Q}_p$ with a nontrivial torsion point over $\mathbb{Q}_p$ of a fixed prime order'
+  speaker: "Stevan Gajović"
+  category: talk
+  institution: "Universidad Autónoma de Madrid"
+  institution_abbreviated: "UAM"
+  start: 2026-11-19
+  seminar: "Number Theory Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3048"
   
 - title: "To be announced"
   speaker: "Carolina Araujo"
@@ -182,6 +202,25 @@
   institution: "Universidad Complutense de Madrid"
   institution_abbreviated: "UCM"
   start: 2026-11-20
+  seminar: "Seminario de Álgebra, Geometría y Topología"
+  seminar_url: "https://eventos.ucm.es/117927/detail/seminario-de-algebra-geometria-y-topologia.html"
+
+- title: "On inertial types of elliptic curves"
+  speaker: "Jose Castro-Moreno"
+  category: talk
+  institution: "Universidad Autónoma de Madrid"
+  institution_abbreviated: "UAM"
+  start: 2026-11-23
+  seminar: "Number Theory Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3070"
+
+- title: "To be announced"
+  speaker: "Juan Viu Sos"
+  category: talk
+  institution: "Universidad Complutense de Madrid"
+  institution_abbreviated: "UCM"
+  start: 2026-12-01
   seminar: "Seminario de Álgebra, Geometría y Topología"
   seminar_url: "https://eventos.ucm.es/117927/detail/seminario-de-algebra-geometria-y-topologia.html"
 
