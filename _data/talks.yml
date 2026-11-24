@@ -186,6 +186,16 @@
   seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
   url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3054"
 
+- title: "Closed geodesics on surfaces: topology, geometry, arithmetic"
+  speaker: "Francisco Arana-Herrera"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-18
+  seminar: "Geometry Seminar"
+  seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=geometria"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3067"
+
 - title: 'The density of elliptic curves over $\mathbb{Q}_p$ with a nontrivial torsion point over $\mathbb{Q}_p$ of a fixed prime order'
   speaker: "Stevan Gajović"
   category: talk
@@ -196,7 +206,27 @@
   seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
   url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3048"
   
-- title: "To be announced"
+- title: "Automorphisms of quartic surfaces and Cremona transformations"
+  speaker: "Carolina Araujo"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-19
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3077"
+
+- title: "Stability conditions on moduli and quotient spaces."
+  speaker: "Jochen Heinloth"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-19
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3078"
+
+- title: "Blowups, Gale duality and moduli spaces"
   speaker: "Carolina Araujo"
   category: talk
   institution: "Universidad Complutense de Madrid"
@@ -214,6 +244,46 @@
   seminar: "Number Theory Seminar"
   seminar_url: "https://www.icmat.es/events/seminars/list/?tipo=teoria_numeros"
   url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3070"
+
+- title: "The Calabi problem for (smooth) Fano threefolds: past, present and future."
+  speaker: "Jesús Martínez García"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-23
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3082"
+
+- title: "Universal quilts for Calabi-Yau singularities, their flip diagrams and moduli spaces"
+  speaker: "Elizabeth Gasparim"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-23
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3083"
+
+- title: "Higher Fano manifolds"
+  speaker: "Carolina Araujo"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-24
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3084"
+
+- title: "Gale duality, blow-ups and moduli spaces"
+  speaker: "Anna Maria Castravet"
+  category: talk
+  institution: "Instituto de Ciencias Matemáticas"
+  institution_abbreviated: "ICMAT"
+  start: 2026-11-24
+  seminar: "Hitchin-Ngô Lab Seminar"
+  seminar_url: "https://www.icmat.es/RT/2026/HNLTT/seminar.php"
+  url: "https://www.icmat.es/events/seminars/seminar-landing/?ID=3085"
 
 - title: "To be announced"
   speaker: "Juan Viu Sos"
